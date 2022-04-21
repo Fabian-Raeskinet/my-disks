@@ -21,7 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyDisk.Application\MyDisk.Application.csproj" />
     <ProjectReference Include="..\MyDisk.Domain\MyDisk.Domain.csproj" />
+    <ProjectReference Include="..\MyDisk.Infrastructure\MyDisk.Infrastructure.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
